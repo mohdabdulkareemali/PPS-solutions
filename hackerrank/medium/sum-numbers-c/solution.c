@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main() {
@@ -8,7 +7,10 @@ int main() {
     scanf("%d %d", &a, &b);
     scanf("%f %f", &x, &y);
 
+    // Sum and difference of integers
     printf("%d %d\n", a + b, a - b);
+
+    // Sum and difference of floats
     printf("%.1f %.1f\n", x + y, x - y);
 
     return 0;
