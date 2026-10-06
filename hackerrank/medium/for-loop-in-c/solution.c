@@ -1,11 +1,8 @@
 #include <stdio.h>
-
-int main() {
+int main(){
     int a, b;
-
     scanf("%d", &a);
     scanf("%d", &b);
-
     for (int i = a; i <= b; i++) {
         if (i == 1)
             printf("one\n");
@@ -25,11 +22,8 @@ int main() {
             printf("eight\n");
         else if (i == 9)
             printf("nine\n");
-        else if (i % 2 == 0)
+        else if (i%2== 0)
             printf("even\n");
         else
-            printf("odd\n");
-    }
-
-    return 0;
-}
+            printf("odd\n");}
+    return 0;}
