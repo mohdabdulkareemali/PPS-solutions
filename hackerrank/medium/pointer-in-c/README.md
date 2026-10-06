@@ -1,4 +1,4 @@
-# Functions in C
+# Playing With Characters
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -50,35 +50,23 @@ Note: Input/ouput will be automatically handled. You only have to complete the f
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T13:31:32.496Z  
+**Submitted:** 2026-10-06T04:24:06.665Z  
 
 ```c
 #include <stdio.h>
 
-int max_of_four(int a, int b, int c, int d) {
-    int max = a;
-
-    if (b > max)
-        max = b;
-
-    if (c > max)
-        max = c;
-
-    if (d > max)
-        max = d;
-
-    return max;
-}
-
 int main() {
-    int a, b, c, d;
+    char ch;
+    char s[100];
+    char sentence[100];
 
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
-    scanf("%d", &d);
+    scanf("%c", &ch);
+    scanf("%s", s);
+    scanf(" %[^\n]%*c", sentence);
 
-    printf("%d", max_of_four(a, b, c, d));
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sentence);
 
     return 0;
 }
