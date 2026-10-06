@@ -1,30 +1,25 @@
 #include <stdio.h>
-
 int main() {
     int n;
-
     scanf("%d", &n);
-
     if (n == 1)
-        printf("one");
+        printf("one\n");
     else if (n == 2)
-        printf("two");
+        printf("two\n");
     else if (n == 3)
-        printf("three");
+        printf("three\n");
     else if (n == 4)
-        printf("four");
+        printf("four\n");
     else if (n == 5)
-        printf("five");
+        printf("five\n");
     else if (n == 6)
-        printf("six");
+        printf("six\n");
     else if (n == 7)
-        printf("seven");
+        printf("seven\n");
     else if (n == 8)
-        printf("eight");
+        printf("eight\n");
     else if (n == 9)
-        printf("nine");
+        printf("nine\n");
     else
-        printf("Greater than 9");
-
-    return 0;
-}
+        printf("Greater than 9\n");
+    return 0;}
